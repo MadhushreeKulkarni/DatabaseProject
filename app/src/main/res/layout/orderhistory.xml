@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tblLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:text="OrderID"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CustomerID"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_gravity="right"
+            android:layout_weight=".3"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+</TableLayout>

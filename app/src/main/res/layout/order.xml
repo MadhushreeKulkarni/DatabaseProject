@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#c0dff8"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/menu">
+
+        <TextView
+            android:id="@+id/FoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="75dp"
+            android:text=""
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALORIES:"
+            android:background="@color/menu"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Cal_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/price"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRICE:"
+            android:background="@color/menu"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Price_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/price"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY:"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:background="@color/menu"/>
+        <EditText
+            android:id="@+id/quant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/price"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:background="@color/menu"/>
+        <EditText
+            android:id="@+id/Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/price"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/a_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount" />
+
+        <Button
+            android:id="@+id/b_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BACK" />
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+    </LinearLayout>
+</LinearLayout>

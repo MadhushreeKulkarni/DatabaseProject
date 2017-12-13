@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="Menu Update"
+            android:textColor="#ce3232"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sandwich"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Sandwich_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Bagel"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Bagel_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Samosa"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Samosa_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Coffee_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Rice Bowl"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/RiceBowl_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Salad"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Salad_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Chicken Pizza"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Pizza_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Pasta"
+            android:textColor="#ce3232"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/Pasta_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/Edit_price"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@color/colorPrimary"
+            android:text="EDIT"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Update_price"
+            style="?android:attr/buttonStyleSmall"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:text="UPDATE"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

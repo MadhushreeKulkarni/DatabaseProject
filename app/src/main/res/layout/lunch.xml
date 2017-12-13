@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/pic1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/menu">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your choice of dish "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/rice_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Rice Bowl"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:id="@+id/salad_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Salad"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+        <Button
+            android:id="@+id/pizza_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Pizza"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+        <Button
+            android:id="@+id/pasta_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Pasta"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

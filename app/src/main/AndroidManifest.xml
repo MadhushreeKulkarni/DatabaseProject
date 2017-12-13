@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="library.prateekkanoje">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Rubin Campus Center"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminLoginActivity"></activity>
+        <activity android:name=".StudentLoginActivity"></activity>
+        <activity android:name=".AdminMenuUpdate"></activity>
+
+        <activity android:name=".Menu"></activity>
+        <activity android:name=".Dinner"></activity>
+        <activity android:name=".Lunch"></activity>
+        <activity android:name=".Breakfast"></activity>
+        <activity android:name=".Pay"></activity>
+        <activity android:name=".Order"></activity>
+        <activity android:name=".Thankyou"></activity>
+
+
+    </application>
+
+</manifest>

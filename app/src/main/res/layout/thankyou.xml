@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pic15">
+
+
+    <EditText
+        android:id="@+id/ThankyouID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:text="THANK YOU FOR SHOPPING........"
+        android:textColor="#f13f7a"
+        android:textColorHighlight="#eeec60"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/again"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER AGAIN"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="#eae869"/>
+
+
+
+    </LinearLayout>
