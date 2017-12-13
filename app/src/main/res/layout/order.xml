@@ -14,8 +14,9 @@
             android:id="@+id/FoodName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginLeft="75dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
             android:text=""
             android:textSize="30dp"
             android:textStyle="bold" />
@@ -27,17 +28,19 @@
         android:layout_marginTop="10dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="CALORIES:"
             android:background="@color/menu"
             android:layout_gravity="left"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/Cal_value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@color/price"
+            android:layout_gravity="center"
             android:text="" />
     </LinearLayout>
     <LinearLayout
@@ -47,17 +50,19 @@
         android:layout_marginTop="10dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="PRICE:"
             android:background="@color/menu"
             android:layout_gravity="left"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/Price_Value"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@color/price"
+            android:layout_gravity="center"
             android:text="" />
     </LinearLayout>
     <LinearLayout
@@ -67,16 +72,18 @@
         android:layout_marginTop="10dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="QUANTITY:"
             android:layout_gravity="left"
             android:layout_marginTop="10dp"
-            android:background="@color/menu"/>
+            android:background="@color/menu"
+            android:textStyle="bold"/>
         <EditText
             android:id="@+id/quant"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@color/price"
+            android:layout_gravity="center"
             android:inputType="number"/>
     </LinearLayout>
     <LinearLayout
@@ -86,43 +93,57 @@
         android:layout_marginTop="10dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:text="Total Price:"
+            android:textAllCaps="true"
             android:layout_gravity="left"
             android:layout_marginTop="10dp"
-            android:background="@color/menu"/>
+            android:background="@color/menu"
+            android:textStyle="bold"/>
         <EditText
             android:id="@+id/Total"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:background="@color/price"
+            android:layout_gravity="center"
             android:inputType="number"/>
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/a_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Amount" />
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button"
+            android:text="Amount"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/b_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="BACK" />
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/pay_btn"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Next" />
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

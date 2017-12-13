@@ -19,7 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class AdminLoginActivity extends AppCompatActivity implements OnClickListener {
-    Button logBtn, backBtn;
+    Button logBtn;
     EditText aid_texted, apsd_texted;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,6 @@ public class AdminLoginActivity extends AppCompatActivity implements OnClickList
 
         logBtn = (Button) this.findViewById(R.id.log_btn);
         logBtn.setOnClickListener(this);
-        backBtn = (Button) this.findViewById(R.id.back_btn);
-        backBtn.setOnClickListener(this);
 
         aid_texted = (EditText) this.findViewById(R.id.adid_edittext);
         apsd_texted = (EditText) this.findViewById(R.id.ad_psw_edittext);
@@ -52,7 +50,7 @@ public class AdminLoginActivity extends AppCompatActivity implements OnClickList
             if (db_password.equals(apsd_texted.getText().toString())) {
                 aid_texted.setText("");
                 apsd_texted.setText("");
-                Intent intent = new Intent(this, AdminMenuUpdate.class);
+                Intent intent = new Intent(this, AdminMain.class);
                 intent.putExtra("Admin ID", cursor.getString(cursor.getColumnIndex("ad_pwd")));
                 this.startActivity(intent);
             } else {

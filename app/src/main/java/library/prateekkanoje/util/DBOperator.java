@@ -124,6 +124,19 @@ public class DBOperator
         }
         return i;
     }
+    public long insert(ContentValues cv,String tablename){
+        long insertedRows=0;
+        if(db!=null){
+            try{
+                insertedRows=db.insert(tablename,null,cv);
+            }catch (SQLException e){
+                insertedRows=0;
+            }finally {
+
+            }
+        }
+        return insertedRows;
+    }
     public void closeDB()
     {
         if (db!=null) db.close();

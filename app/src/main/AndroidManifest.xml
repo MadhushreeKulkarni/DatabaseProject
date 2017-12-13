@@ -27,6 +27,9 @@
         <activity android:name=".Pay"></activity>
         <activity android:name=".Order"></activity>
         <activity android:name=".Thankyou"></activity>
+        <activity android:name=".AdminMain"></activity>
+        <activity android:name=".OrderDetails"></activity>
+
 
 
     </application>

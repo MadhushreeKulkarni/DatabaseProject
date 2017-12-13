@@ -12,5 +12,7 @@ public abstract class SQLCommand {
 
     public static String menu_cal_price_query="select f_cal,f_price from food where f_name=?";
 
+    public static String admin_orders="select o_id,cust_id,qtyord from orders";
+
 
 }

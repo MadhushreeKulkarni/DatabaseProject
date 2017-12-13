@@ -4,7 +4,9 @@ package library.prateekkanoje;
  * Created by kanoj on 12/9/2017.
  */
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.os.Bundle;
@@ -26,6 +28,8 @@ public class Order extends AppCompatActivity {
     private static final String TAG ="Order";
     String category=null;
     Cursor cursor=null;
+    SharedPreferences pref=null;
+    String customerID=null;
     @Override
     /*
     *  ContentValues values=new ContentValues();
@@ -53,6 +57,8 @@ public class Order extends AppCompatActivity {
         cal_value=(EditText)findViewById(R.id.Cal_value);
         price_value=(EditText)findViewById(R.id.Price_Value);
         amount.setEnabled(false);
+        pref=getSharedPreferences("MSK",MODE_PRIVATE);
+        customerID=pref.getString("Cust_ID",null);
         cursor= DBOperator.getInstance().execQuery(SQLCommand.menu_cal_price_query, new String[]{category});
         try{
             if(cursor.getCount()>0){
@@ -64,6 +70,9 @@ public class Order extends AppCompatActivity {
             cal_value.setEnabled(false);
         }catch(SQLException e) {
             Log.e("Order",e.getMessage());
+
+        }finally {
+            cursor.close();
         }
 
 
@@ -80,6 +89,10 @@ public class Order extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Starting");
+                ContentValues cv=new ContentValues();
+                cv.put("cust_id",customerID);
+                cv.put("qtyord",Integer.parseInt(quan.getText().toString()));
+                long rowsInserted=DBOperator.getInstance().insert(cv,"orders");
                 Intent intent = new Intent(Order.this,Pay.class);
                 startActivity(intent);
             }

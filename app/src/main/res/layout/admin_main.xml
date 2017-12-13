@@ -5,47 +5,30 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="horizontal"
-        android:weightSum="1">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:src="@drawable/pic3" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
-
         <Button
-            android:id="@+id/student_btn"
+            android:id="@+id/history_btn"
             android:layout_width="260dp"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="300dp"
             android:layout_weight="1"
-            android:text="Student"
+            android:text="Order History"
             android:background="@drawable/button"
             android:textColor="#FFFFFF"
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/admin_btn"
+            android:id="@+id/update_btn"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="40dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="300dp"
             android:layout_weight="1"
-            android:text="Admin"
+            android:text="Menu Update"
             android:background="@drawable/button"
             android:textColor="#FFFFFF"
             android:textStyle="bold"/>
